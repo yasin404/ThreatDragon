@@ -2800,48 +2800,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Signierter (und verschlüsselter)\nReport wird weitergeleitet",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "6149b8aa-6af5-425b-8a1f-644c7d745d8e",
-            "source": {
-              "cell": "41e70723-1c83-4752-abdb-d6954126767c"
-            },
-            "target": {
-              "cell": "2731c64a-cead-475d-9b57-7e285ba7e2ca"
-            },
-            "labels": [
-              "Signierter (und verschlüsselter)\nReport wird weitergeleitet"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Überwachung",
               "description": "Überwacht fehlgeschlagene Anmeldeversuche und verdächtige Anmeldeversuche",
               "outOfScope": false,
@@ -3000,6 +2958,48 @@
             },
             "labels": [
               "Sendet\nRAW-Daten"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Signierter (und verschlüsselter)\nReport wird weitergeleitet",
+              "description": "Beim Verschlüsseln wird der öffentliche Schlüssels des Empfängers (hier: des Managements) verwendet",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "6149b8aa-6af5-425b-8a1f-644c7d745d8e",
+            "source": {
+              "cell": "41e70723-1c83-4752-abdb-d6954126767c"
+            },
+            "target": {
+              "cell": "2731c64a-cead-475d-9b57-7e285ba7e2ca"
+            },
+            "labels": [
+              "Signierter (und verschlüsselter)\nReport wird weitergeleitet"
             ]
           },
           {
