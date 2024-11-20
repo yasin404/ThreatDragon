@@ -2511,15 +2511,15 @@
               "threats": []
             },
             "id": "cda35012-55d3-42e0-b4a2-28173e89b865",
+            "labels": [
+              "5a. OTT\nversenden"
+            ],
             "source": {
               "cell": "16e31dc7-c28c-4f02-98fd-8a3e2452918f"
             },
             "target": {
               "cell": "9240126e-07eb-42f1-aa06-81b943ce55e7"
             },
-            "labels": [
-              "5a. OTT\nversenden"
-            ],
             "vertices": [
               {
                 "x": 750,
@@ -2607,15 +2607,15 @@
               "threats": []
             },
             "id": "ab5d74ed-02ca-4841-ac49-ef4da5985029",
+            "labels": [
+              "Sendet RAW-Daten"
+            ],
             "source": {
               "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
             },
             "target": {
               "cell": "41e70723-1c83-4752-abdb-d6954126767c"
-            },
-            "labels": [
-              "Sendet RAW-Daten"
-            ]
+            }
           },
           {
             "position": {
@@ -2689,7 +2689,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Telefonnummer-\nAPI-Gateway"
+                "text": "Telefon-Routing-\nInterface"
               },
               "body": {
                 "stroke": "#333333",
@@ -2703,7 +2703,7 @@
             "id": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21",
             "data": {
               "type": "tm.Process",
-              "name": "Telefonnummer-\nAPI-Gateway",
+              "name": "Telefon-Routing-\nInterface",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -2940,6 +2940,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 20,
             "id": "41e70723-1c83-4752-abdb-d6954126767c",
             "data": {
               "type": "tm.Process",
@@ -2953,8 +2954,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 20
+            }
           }
         ]
       }
