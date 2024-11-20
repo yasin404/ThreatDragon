@@ -2877,6 +2877,43 @@
               "name": "Externer Service für\nden Versand des OTT",
               "hasOpenThreats": false
             }
+          },
+          {
+            "position": {
+              "x": 430,
+              "y": 254
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Allsecure\nMobile Phone\nOTT Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "f61870d2-8a88-45c4-bd30-0fefd9cd6e08",
+            "data": {
+              "type": "tm.Process",
+              "name": "Allsecure\nMobile Phone\nOTT Service",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 21
           }
         ]
       }
