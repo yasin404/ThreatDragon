@@ -2805,7 +2805,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Kundentelefon-\nanbieter"
+                "text": "Mobile OTT\nPhone Service"
               },
               "body": {
                 "stroke": "#333333",
@@ -2818,7 +2818,7 @@
             "id": "9240126e-07eb-42f1-aa06-81b943ce55e7",
             "data": {
               "type": "tm.Process",
-              "name": "Kundentelefon-\nanbieter",
+              "name": "Mobile OTT\nPhone Service",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
