@@ -1684,10 +1684,19 @@
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "version": "2.2.0",
         "cells": []
+      },
+      {
+        "id": 11,
+        "title": "test",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.2.0",
+        "cells": []
       }
     ],
     "reviewer": "Georg Neugebauer",
-    "diagramTop": 11,
+    "diagramTop": 12,
     "threatTop": 102
   },
   "version": "2.2.0"
