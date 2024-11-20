@@ -1675,11 +1675,20 @@
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "id": 0,
         "diagramType": "STRIDE"
+      },
+      {
+        "id": 10,
+        "title": "Datenflussdiagramm",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.2.0",
+        "cells": []
       }
     ],
     "reviewer": "Georg Neugebauer",
-    "diagramTop": 10,
+    "diagramTop": 11,
     "threatTop": 102
   },
-  "version": "2.1.1"
+  "version": "2.2.0"
 }
