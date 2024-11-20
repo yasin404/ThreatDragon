@@ -2661,7 +2661,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Log-DB"
+                "text": "Routing-\nInformation-DB"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -2677,7 +2677,7 @@
             "id": "ae16577f-0391-40ac-bccc-def4a99d2e3b",
             "data": {
               "type": "tm.Store",
-              "name": "Log-DB",
+              "name": "Routing-\nInformation-DB",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
