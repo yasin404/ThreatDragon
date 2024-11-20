@@ -1686,12 +1686,12 @@
         "cells": [
           {
             "position": {
-              "x": 341.99999999999955,
-              "y": -29.99999999999909
+              "x": 342.00000000000057,
+              "y": -200.00000000000023
             },
             "size": {
               "width": 610,
-              "height": 800
+              "height": 950
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -1751,6 +1751,31 @@
             },
             "zIndex": -1,
             "id": "978201ce-3be5-49c9-b7a2-e91c816684b2",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 45.99999999999875,
+              "y": -195.99999999999915
+            },
+            "size": {
+              "width": 220,
+              "height": 430
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": ""
+              }
+            },
+            "id": "71b7afe1-e30a-4bc3-94bd-ad58faee9072",
+            "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
               "name": "",
@@ -2618,9 +2643,180 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "nutzt privaten\nSchlüssel und\nsigniert damit\nden Report",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "678875e9-d084-4b2c-aa6f-479543568aea",
+            "source": {
+              "cell": "41e70723-1c83-4752-abdb-d6954126767c"
+            },
+            "target": {
+              "cell": "1c1846b0-6074-4656-abc8-782a4656e0a4"
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": -10
+              }
+            ],
+            "labels": [
+              "nutzt privaten\nSchlüssel und\nsigniert damit\nden Report"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Signierter Report\nwird weitergeleitet",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "6149b8aa-6af5-425b-8a1f-644c7d745d8e",
+            "source": {
+              "cell": "41e70723-1c83-4752-abdb-d6954126767c"
+            },
+            "target": {
+              "cell": "2731c64a-cead-475d-9b57-7e285ba7e2ca"
+            },
+            "labels": [
+              "Signierter Report\nwird weitergeleitet"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Report wird versendet",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1e85556c-e008-4150-8121-2882e4f0aca2",
+            "source": {
+              "cell": "2731c64a-cead-475d-9b57-7e285ba7e2ca"
+            },
+            "target": {
+              "cell": "97068b2d-1de8-4400-a93b-7cfcafbbf764"
+            },
+            "labels": [
+              "Report wird versendet"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "522e7ba5-4bba-4b1e-a01e-79d4632fc2dd",
+            "source": {
+              "cell": "97068b2d-1de8-4400-a93b-7cfcafbbf764"
+            },
+            "target": {
+              "cell": "f1109ed4-3c6a-49b1-a727-726f848fd6b1"
+            }
+          },
+          {
             "position": {
               "x": 375,
-              "y": -10
+              "y": -180
             },
             "size": {
               "width": 112.5,
@@ -2945,7 +3141,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Export\n(Mangement\nReport)",
-              "description": "",
+              "description": "(1) Erstellt aus den RAW-Dateneinen monatlichen Report als Excel-Datei (2) Nutzt den privaten Schlüssel um die Excel-Datei zu signieren",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -2955,6 +3151,179 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 770,
+              "y": -156
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Speicher für\nprivaten Schlüssel"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "1c1846b0-6074-4656-abc8-782a4656e0a4",
+            "zIndex": 21,
+            "data": {
+              "type": "tm.Store",
+              "name": "Speicher für\nprivaten Schlüssel",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 100,
+              "y": -60
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Management"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "97068b2d-1de8-4400-a93b-7cfcafbbf764",
+            "zIndex": 22,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Management",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 512,
+              "y": -96
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "SMTP-Server\n(E-Mail-Service)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "2731c64a-cead-475d-9b57-7e285ba7e2ca",
+            "data": {
+              "type": "tm.Process",
+              "name": "SMTP-Server\n(E-Mail-Service)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 23
+          },
+          {
+            "position": {
+              "x": 70,
+              "y": -180
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Management"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "aa2794fd-ec43-439e-b585-a78fa298bc4e",
+            "zIndex": 24,
+            "data": {
+              "type": "tm.Text",
+              "name": "Management",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 91.25,
+              "y": 65
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Signatur\nÜberprüfung"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "f1109ed4-3c6a-49b1-a727-726f848fd6b1",
+            "data": {
+              "type": "tm.Process",
+              "name": "Signatur\nÜberprüfung",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 25
           }
         ]
       }
