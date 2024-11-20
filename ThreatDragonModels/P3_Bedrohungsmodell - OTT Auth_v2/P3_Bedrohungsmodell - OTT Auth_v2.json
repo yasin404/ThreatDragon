@@ -1,6 +1,6 @@
 {
   "summary": {
-    "title": "Bedrohungsmodell - OTT Auth",
+    "title": "P3_Bedrohungsmodell - OTT Auth_v2",
     "owner": "Firma Allsecure",
     "description": "Die Firma Allsecure betreibt unterschiedliche Anwendungen mit Hilfe einer 2-Faktorauthentifizierung via One-time token, der an das entsprechende Smartphone des Nutzers geschickt wird."
   },
