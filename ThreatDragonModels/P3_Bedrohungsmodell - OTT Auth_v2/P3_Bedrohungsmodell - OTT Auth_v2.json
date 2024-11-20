@@ -2049,7 +2049,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "2. Weiterleitung\nTelefonnummer",
+              "name": "2. Weiterleitung\nTelefonnummer\nund Nachricht",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -2074,7 +2074,7 @@
               }
             ],
             "labels": [
-              "2. Weiterleitung\nTelefonnummer"
+              "2. Weiterleitung\nTelefonnummer\nund Nachricht"
             ]
           },
           {
@@ -2145,97 +2145,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "2a. Telefonnummer",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "a49b5c56-2d0d-4022-a3e3-a532234dcc55",
-            "source": {
-              "cell": "34317f07-d334-4b40-ada8-35850093c048"
-            },
-            "target": {
-              "cell": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21"
-            },
-            "vertices": [
-              {
-                "x": 1360,
-                "y": 410
-              }
-            ],
-            "labels": [
-              "2a. Telefonnummer"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Auslesen von Informationen",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "5b089eec-dd54-4c97-9a3c-25e441d9f9ba",
-            "source": {
-              "cell": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21"
-            },
-            "target": {
-              "x": 1390,
-              "y": 280
-            },
-            "labels": [
-              "Auslesen von Informationen"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Nummer auslesen",
               "description": "",
               "outOfScope": false,
@@ -2262,54 +2171,6 @@
             ],
             "labels": [
               "Nummer auslesen"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Login",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "d085f817-8b2a-492c-bf7a-377c2931c691",
-            "source": {
-              "cell": "ce4a19b0-8df6-49f4-8fed-f68be9f5affe"
-            },
-            "target": {
-              "cell": "635fdda8-b02b-465b-b8a2-17cd209d5a2c"
-            },
-            "vertices": [
-              {
-                "x": 310,
-                "y": 430
-              }
-            ],
-            "labels": [
-              "Login"
             ]
           },
           {
@@ -2391,12 +2252,12 @@
             },
             "vertices": [
               {
-                "x": 740,
-                "y": 1170
+                "x": 730,
+                "y": 1110
               },
               {
-                "x": 420,
-                "y": 1160
+                "x": 410,
+                "y": 1000
               }
             ],
             "labels": [
@@ -2467,54 +2328,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "2b. Telefonanbieter",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "6e020c85-c599-4eb8-8bf2-f7dbfb180637",
-            "source": {
-              "cell": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21"
-            },
-            "target": {
-              "cell": "34317f07-d334-4b40-ada8-35850093c048"
-            },
-            "labels": [
-              "2b. Telefonanbieter"
-            ],
-            "vertices": [
-              {
-                "x": 1370,
-                "y": 530
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Telefonnummer, OTT",
               "description": "",
               "outOfScope": false,
@@ -2542,6 +2355,197 @@
             ],
             "labels": [
               "Telefonnummer, OTT"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login \n(Username, PW)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d085f817-8b2a-492c-bf7a-377c2931c691",
+            "source": {
+              "cell": "ce4a19b0-8df6-49f4-8fed-f68be9f5affe"
+            },
+            "target": {
+              "cell": "635fdda8-b02b-465b-b8a2-17cd209d5a2c"
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 430
+              },
+              {
+                "x": 310,
+                "y": 430
+              }
+            ],
+            "labels": [
+              "Login \n(Username, PW)"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2. Telefonnummer\nund Nachricht",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "a49b5c56-2d0d-4022-a3e3-a532234dcc55",
+            "source": {
+              "cell": "34317f07-d334-4b40-ada8-35850093c048"
+            },
+            "target": {
+              "cell": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21"
+            },
+            "vertices": [
+              {
+                "x": 1360,
+                "y": 410
+              }
+            ],
+            "labels": [
+              "2. Telefonnummer\nund Nachricht"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "3a. Auslesen von Informationen",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "5b089eec-dd54-4c97-9a3c-25e441d9f9ba",
+            "source": {
+              "cell": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21"
+            },
+            "target": {
+              "x": 1390,
+              "y": 280
+            },
+            "labels": [
+              "3a. Auslesen von Informationen"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "3b. Telefonanbieter",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "6e020c85-c599-4eb8-8bf2-f7dbfb180637",
+            "source": {
+              "cell": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21"
+            },
+            "target": {
+              "cell": "34317f07-d334-4b40-ada8-35850093c048"
+            },
+            "labels": [
+              "3b. Telefonanbieter"
+            ],
+            "vertices": [
+              {
+                "x": 1370,
+                "y": 530
+              }
             ]
           },
           {
