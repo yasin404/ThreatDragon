@@ -1668,40 +1668,6 @@
               "protocol": "",
               "isPublicNetwork": false
             }
-          },
-          {
-            "position": {
-              "x": 790,
-              "y": 150
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "id": "27919f9e-bfd8-458a-be99-7b669303a33e",
-            "zIndex": 14,
-            "data": {
-              "type": "tm.Process",
-              "name": "Process",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
           }
         ],
         "version": "2.1.1",
