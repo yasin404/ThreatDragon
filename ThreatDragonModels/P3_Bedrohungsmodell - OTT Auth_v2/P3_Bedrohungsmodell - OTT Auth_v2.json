@@ -1686,12 +1686,12 @@
         "cells": [
           {
             "position": {
-              "x": 340,
-              "y": 150
+              "x": 341.9999999999998,
+              "y": 140.00000000000023
             },
             "size": {
               "width": 610,
-              "height": 500
+              "height": 470
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -1712,11 +1712,11 @@
           {
             "position": {
               "x": 1085.9999999999995,
-              "y": 150.0000000000009
+              "y": 150.00000000000102
             },
             "size": {
               "width": 560,
-              "height": 500
+              "height": 460
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -1953,46 +1953,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "7f67f54b-b412-4912-b7ff-9e9275a11cd1",
-            "source": {
-              "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
-            },
-            "target": {
-              "x": 690,
-              "y": 280
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "1. Auth Challenge",
               "description": "",
               "outOfScope": false,
@@ -2185,51 +2145,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "403039bd-61b3-4336-b5f0-3440f88227c2",
-            "source": {
-              "cell": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21"
-            },
-            "target": {
-              "cell": "34317f07-d334-4b40-ada8-35850093c048"
-            },
-            "vertices": [
-              {
-                "x": 1360,
-                "y": 520
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "2a. Telefonnummer",
               "description": "",
               "outOfScope": false,
@@ -2300,47 +2215,6 @@
             "labels": [
               "Auslesen von Informationen"
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "dfaea88f-48b7-48e8-8588-09e89b1ae63b",
-            "source": {
-              "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
-            },
-            "target": {
-              "x": 840,
-              "y": 760
-            },
-            "vertices": []
           },
           {
             "shape": "flow",
@@ -2527,6 +2401,147 @@
             ],
             "labels": [
               "5. OTT"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log(Login, OTT, Phone Number)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "7f67f54b-b412-4912-b7ff-9e9275a11cd1",
+            "source": {
+              "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
+            },
+            "target": {
+              "x": 690,
+              "y": 280
+            },
+            "vertices": [],
+            "labels": [
+              "Log(Login, OTT, Phone Number)"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2b. Telefonanbieter",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "6e020c85-c599-4eb8-8bf2-f7dbfb180637",
+            "source": {
+              "cell": "2f44ab8c-d49a-43e0-8ffb-9a68bc9fbf21"
+            },
+            "target": {
+              "cell": "34317f07-d334-4b40-ada8-35850093c048"
+            },
+            "labels": [
+              "2b. Telefonanbieter"
+            ],
+            "vertices": [
+              {
+                "x": 1370,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Telefonnummer, OTT",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "dfaea88f-48b7-48e8-8588-09e89b1ae63b",
+            "source": {
+              "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
+            },
+            "target": {
+              "x": 840,
+              "y": 760
+            },
+            "vertices": [
+              {
+                "x": 841.5,
+                "y": 660
+              }
+            ],
+            "labels": [
+              "Telefonnummer, OTT"
             ]
           },
           {
