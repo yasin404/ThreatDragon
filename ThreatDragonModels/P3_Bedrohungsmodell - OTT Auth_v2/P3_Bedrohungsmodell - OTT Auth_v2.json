@@ -2359,8 +2359,8 @@
             },
             "vertices": [
               {
-                "x": 280,
-                "y": 330
+                "x": 270,
+                "y": 340
               }
             ]
           },
@@ -2503,12 +2503,12 @@
             },
             "vertices": [
               {
-                "x": 590,
-                "y": 790
+                "x": 570,
+                "y": 740
               },
               {
-                "x": 561.5,
-                "y": 580
+                "x": 570,
+                "y": 530
               }
             ]
           },
@@ -2800,7 +2800,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Signierter Report\nwird weitergeleitet",
+              "name": "Signierter (und verschlüsselter)\nReport wird weitergeleitet",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -2819,7 +2819,187 @@
               "cell": "2731c64a-cead-475d-9b57-7e285ba7e2ca"
             },
             "labels": [
-              "Signierter Report\nwird weitergeleitet"
+              "Signierter (und verschlüsselter)\nReport wird weitergeleitet"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Überwachung",
+              "description": "Überwacht fehlgeschlagene Anmeldeversuche und verdächtige Anmeldeversuche",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "3bb33861-9fce-4d02-8e50-2d3042b78d49",
+            "source": {
+              "cell": "ab78fcdf-77c9-4491-a3b2-b811278a7c14"
+            },
+            "target": {
+              "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
+            },
+            "vertices": [
+              {
+                "x": 770,
+                "y": 360
+              }
+            ],
+            "labels": [
+              "Überwachung"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Überwachung",
+              "description": "Überwacht unbefugte Zugriffe und Fehlkonfigurationen",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "e96cb512-9e16-4211-a866-4f33edb469ec",
+            "source": {
+              "cell": "ab78fcdf-77c9-4491-a3b2-b811278a7c14"
+            },
+            "target": {
+              "cell": "9240126e-07eb-42f1-aa06-81b943ce55e7"
+            },
+            "labels": [
+              "Überwachung"
+            ],
+            "vertices": [
+              {
+                "x": 590,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Speichert\nverdächtige \nEreignisse",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "b10028bc-c7cc-46b5-a2ee-9bdecd8aa575",
+            "source": {
+              "cell": "ab78fcdf-77c9-4491-a3b2-b811278a7c14"
+            },
+            "target": {
+              "cell": "31642506-8283-45f4-8dc9-6422d307136f"
+            },
+            "labels": [
+              "Speichert\nverdächtige \nEreignisse"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sendet\nRAW-Daten",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d52b3406-abac-4e3a-86b3-41f93dd86802",
+            "source": {
+              "cell": "ab78fcdf-77c9-4491-a3b2-b811278a7c14"
+            },
+            "target": {
+              "cell": "41e70723-1c83-4752-abdb-d6954126767c"
+            },
+            "labels": [
+              "Sendet\nRAW-Daten"
             ]
           },
           {
@@ -3089,8 +3269,8 @@
           },
           {
             "position": {
-              "x": 450,
-              "y": 220
+              "x": 390,
+              "y": 230
             },
             "size": {
               "width": 130,
@@ -3135,7 +3315,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Export\n(Mangement\nReport)"
+                "text": "Export\n(monatlicher\nMangement\nReport)"
               },
               "body": {
                 "stroke": "#333333",
@@ -3149,7 +3329,7 @@
             "id": "41e70723-1c83-4752-abdb-d6954126767c",
             "data": {
               "type": "tm.Process",
-              "name": "Export\n(Mangement\nReport)",
+              "name": "Export\n(monatlicher\nMangement\nReport)",
               "description": "(1) Erstellt aus den RAW-Dateneinen monatlichen Report als Excel-Datei (2) Nutzt den privaten Schlüssel um die Excel-Datei zu signieren",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -3308,7 +3488,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Signatur\nÜberprüfung"
+                "text": "Signatur\nÜberprüfung /\nEntschlüsselung"
               },
               "body": {
                 "stroke": "#333333",
@@ -3321,7 +3501,7 @@
             "id": "f1109ed4-3c6a-49b1-a727-726f848fd6b1",
             "data": {
               "type": "tm.Process",
-              "name": "Signatur\nÜberprüfung",
+              "name": "Signatur\nÜberprüfung /\nEntschlüsselung",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -3333,6 +3513,84 @@
               "threats": []
             },
             "zIndex": 25
+          },
+          {
+            "position": {
+              "x": 600,
+              "y": 195
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "SIEM-System"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "ab78fcdf-77c9-4491-a3b2-b811278a7c14",
+            "data": {
+              "type": "tm.Process",
+              "name": "SIEM-System",
+              "description": "Es empfängt Ereignisse, analysiert diese und identifiziert verdächtige Muster. (1) Überwacht fehlgeschlagene Anmeldeversuche und verdächtige Anmeldeversuche (2) Überwacht unbefugte Zugriffe und Fehlkonfigurationen",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 26
+          },
+          {
+            "position": {
+              "x": 395,
+              "y": 90.00000000000102
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "SIEM-System-DB"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "31642506-8283-45f4-8dc9-6422d307136f",
+            "data": {
+              "type": "tm.Store",
+              "name": "SIEM-System-DB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "zIndex": 27
           }
         ]
       }
