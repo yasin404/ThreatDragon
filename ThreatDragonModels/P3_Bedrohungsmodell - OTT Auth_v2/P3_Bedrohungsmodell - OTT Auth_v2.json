@@ -1810,7 +1810,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Login System\nWebapp \n+ Mobile App",
-              "description": "",
+              "description": "Vergleicht eingegebenen OTT-Wert auf Telefon mit erwartetem OTT seitens 2-Faktor-Dienst.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -1974,7 +1974,12 @@
             "target": {
               "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 640,
+                "y": 430
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2553,6 +2558,54 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Erwartete OTT",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "a9771c17-753b-42ca-816c-a86c33cf31e5",
+            "source": {
+              "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
+            },
+            "target": {
+              "cell": "635fdda8-b02b-465b-b8a2-17cd209d5a2c"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 530
+              }
+            ],
+            "labels": [
+              "Erwartete OTT"
+            ]
+          },
+          {
             "position": {
               "x": 364,
               "y": 160
@@ -2899,6 +2952,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 21,
             "id": "f61870d2-8a88-45c4-bd30-0fefd9cd6e08",
             "data": {
               "type": "tm.Process",
@@ -2912,8 +2966,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 21
+            }
           }
         ]
       }
