@@ -1761,6 +1761,31 @@
           },
           {
             "position": {
+              "x": 1070,
+              "y": 890
+            },
+            "size": {
+              "width": 240,
+              "height": 270
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": ""
+              }
+            },
+            "id": "e4b2378a-e352-4d56-a3cc-5776a1f4f243",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 350,
               "y": 410
             },
@@ -1798,8 +1823,8 @@
           },
           {
             "position": {
-              "x": 110,
-              "y": 420
+              "x": 100,
+              "y": 445
             },
             "size": {
               "width": 112.5,
@@ -2042,54 +2067,6 @@
             ],
             "labels": [
               "Erwarteter OTT"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Login",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "d085f817-8b2a-492c-bf7a-377c2931c691",
-            "source": {
-              "cell": "ce4a19b0-8df6-49f4-8fed-f68be9f5affe"
-            },
-            "target": {
-              "cell": "635fdda8-b02b-465b-b8a2-17cd209d5a2c"
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 410
-              }
-            ],
-            "labels": [
-              "Login"
             ]
           },
           {
@@ -2414,6 +2391,145 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d085f817-8b2a-492c-bf7a-377c2931c691",
+            "source": {
+              "cell": "ce4a19b0-8df6-49f4-8fed-f68be9f5affe"
+            },
+            "target": {
+              "cell": "635fdda8-b02b-465b-b8a2-17cd209d5a2c"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 430
+              }
+            ],
+            "labels": [
+              "Login"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "8e85f78b-a724-4f09-96e3-75d64ce0df8d",
+            "source": {
+              "cell": "16e31dc7-c28c-4f02-98fd-8a3e2452918f"
+            },
+            "target": {
+              "cell": "9240126e-07eb-42f1-aa06-81b943ce55e7"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "5. OTT",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "9383628a-27d6-4a25-b7a5-afe58491be36",
+            "source": {
+              "cell": "9240126e-07eb-42f1-aa06-81b943ce55e7"
+            },
+            "target": {
+              "cell": "635fdda8-b02b-465b-b8a2-17cd209d5a2c"
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 1170
+              },
+              {
+                "x": 420,
+                "y": 1160
+              }
+            ],
+            "labels": [
+              "5. OTT"
+            ]
+          },
+          {
             "position": {
               "x": 364,
               "y": 160
@@ -2675,6 +2791,67 @@
             "data": {
               "type": "tm.Text",
               "name": "Telefonanbieter",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1122,
+              "y": 982
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Kundentelefon-\nanbieter"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "9240126e-07eb-42f1-aa06-81b943ce55e7",
+            "data": {
+              "type": "tm.Process",
+              "name": "Kundentelefon-\nanbieter",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 19
+          },
+          {
+            "position": {
+              "x": 1110,
+              "y": 900
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Externer Service für\nden Versand des OTT"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "11898960-6bfb-43bd-bbcf-fdb5def29562",
+            "zIndex": 20,
+            "data": {
+              "type": "tm.Text",
+              "name": "Externer Service für\nden Versand des OTT",
               "hasOpenThreats": false
             }
           }
