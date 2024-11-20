@@ -1736,6 +1736,31 @@
           },
           {
             "position": {
+              "x": 472,
+              "y": 715.0000000000002
+            },
+            "size": {
+              "width": 480,
+              "height": 230
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": ""
+              }
+            },
+            "id": "978201ce-3be5-49c9-b7a2-e91c816684b2",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 350,
               "y": 410
             },
@@ -2300,6 +2325,95 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "dfaea88f-48b7-48e8-8588-09e89b1ae63b",
+            "source": {
+              "cell": "c5dbf512-33ed-46c2-8764-254a3a3aa9ee"
+            },
+            "target": {
+              "x": 840,
+              "y": 760
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Nummer auslesen",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "182f2029-3f8c-47b3-802b-1f7279df7638",
+            "source": {
+              "cell": "16e31dc7-c28c-4f02-98fd-8a3e2452918f"
+            },
+            "target": {
+              "cell": "3b7969cb-59cd-4c7a-a04a-21419cf828a5"
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 910
+              }
+            ],
+            "labels": [
+              "Nummer auslesen"
+            ]
+          },
+          {
             "position": {
               "x": 364,
               "y": 160
@@ -2459,6 +2573,108 @@
             "data": {
               "type": "tm.Text",
               "name": "Externer Serivce für \nTelefonnummerauflösung\n(Telco)",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 770,
+              "y": 760
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Kundentelefon-\nanbieter"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "16e31dc7-c28c-4f02-98fd-8a3e2452918f",
+            "data": {
+              "type": "tm.Process",
+              "name": "Kundentelefon-\nanbieter",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 16
+          },
+          {
+            "position": {
+              "x": 532,
+              "y": 795
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Telefonnummern-DB"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "3b7969cb-59cd-4c7a-a04a-21419cf828a5",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Store",
+              "name": "Telefonnummern-DB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 487.5,
+              "y": 715
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Telefonanbieter"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "1700b1ff-e616-4345-9e3e-dd672787e34d",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Text",
+              "name": "Telefonanbieter",
               "hasOpenThreats": false
             }
           }
