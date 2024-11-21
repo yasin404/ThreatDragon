@@ -1818,7 +1818,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "1eb834c3-c0ca-4551-98c2-7a21353ad028",
+                  "title": "DDoS",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Ein DDoS Angriff kann den Login-Dienst überlasten und somit für Anwender unerreichbar machen.\n\nCAPEC-125: Flooding: An adversary consumes the resources of a target by rapidly engaging in a large number of interactions with the target. \n\nATT&CK: TA0038 - Network Effects: An adversary consumes the resources of a target by rapidly engaging in a large number of interactions with the target. \n\n- ATT&CK: T1498 - Network Denial of Service: Adversaries may perform Network Denial of Service (DoS) attacks to degrade or block the availability of targeted resources to users.\n\nD: 8 / R: 10 / E: 8 / A: 10 / DREA: 36\n",
+                  "mitigation": "Firewall, Load-Balancer oder CDN einsetzen, um direkten Datenverkehr auf Login-Server zu begrenzen.\n\nDEFEND: D3-ITF - Inbound Traffic Filtering\nASVS: CWE 770 (8.1.4): Verify the application can detect and altert on abnormal numbers of requests such as by IP, user, total per hour or day, or whatever makes sense for the application.\n\nD: 4 / R: 10 / E: 4 / A: 10 / DREA: 28",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 103,
+                  "score": "28"
+                }
+              ]
             }
           },
           {
@@ -3597,7 +3611,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 102
+    "threatTop": 103
   },
   "version": "2.2.0"
 }
