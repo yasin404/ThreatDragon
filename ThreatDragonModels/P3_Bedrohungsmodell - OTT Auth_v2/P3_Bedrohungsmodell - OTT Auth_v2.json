@@ -1774,8 +1774,8 @@
                 "text": ""
               }
             },
-            "id": "71b7afe1-e30a-4bc3-94bd-ad58faee9072",
             "zIndex": -1,
+            "id": "71b7afe1-e30a-4bc3-94bd-ad58faee9072",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "",
@@ -2634,6 +2634,9 @@
               "threats": []
             },
             "id": "678875e9-d084-4b2c-aa6f-479543568aea",
+            "labels": [
+              "nutzt privaten\nSchlüssel und\nsigniert damit\nden Report"
+            ],
             "source": {
               "cell": "41e70723-1c83-4752-abdb-d6954126767c"
             },
@@ -2645,9 +2648,6 @@
                 "x": 830,
                 "y": -10
               }
-            ],
-            "labels": [
-              "nutzt privaten\nSchlüssel und\nsigniert damit\nden Report"
             ]
           },
           {
@@ -2682,15 +2682,15 @@
               "threats": []
             },
             "id": "1e85556c-e008-4150-8121-2882e4f0aca2",
+            "labels": [
+              "Report wird versendet"
+            ],
             "source": {
               "cell": "2731c64a-cead-475d-9b57-7e285ba7e2ca"
             },
             "target": {
               "cell": "97068b2d-1de8-4400-a93b-7cfcafbbf764"
-            },
-            "labels": [
-              "Report wird versendet"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -2812,6 +2812,9 @@
               "threats": []
             },
             "id": "3bb33861-9fce-4d02-8e50-2d3042b78d49",
+            "labels": [
+              "Überwachung"
+            ],
             "source": {
               "cell": "ab78fcdf-77c9-4491-a3b2-b811278a7c14"
             },
@@ -2823,9 +2826,6 @@
                 "x": 770,
                 "y": 360
               }
-            ],
-            "labels": [
-              "Überwachung"
             ]
           },
           {
@@ -2860,15 +2860,15 @@
               "threats": []
             },
             "id": "e96cb512-9e16-4211-a866-4f33edb469ec",
+            "labels": [
+              "Überwachung"
+            ],
             "source": {
               "cell": "ab78fcdf-77c9-4491-a3b2-b811278a7c14"
             },
             "target": {
               "cell": "9240126e-07eb-42f1-aa06-81b943ce55e7"
             },
-            "labels": [
-              "Überwachung"
-            ],
             "vertices": [
               {
                 "x": 590,
@@ -2908,15 +2908,15 @@
               "threats": []
             },
             "id": "b10028bc-c7cc-46b5-a2ee-9bdecd8aa575",
+            "labels": [
+              "Speichert\nverdächtige \nEreignisse"
+            ],
             "source": {
               "cell": "ab78fcdf-77c9-4491-a3b2-b811278a7c14"
             },
             "target": {
               "cell": "31642506-8283-45f4-8dc9-6422d307136f"
-            },
-            "labels": [
-              "Speichert\nverdächtige \nEreignisse"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -2950,15 +2950,15 @@
               "threats": []
             },
             "id": "d52b3406-abac-4e3a-86b3-41f93dd86802",
+            "labels": [
+              "Sendet\nRAW-Daten"
+            ],
             "source": {
               "cell": "ab78fcdf-77c9-4491-a3b2-b811278a7c14"
             },
             "target": {
               "cell": "41e70723-1c83-4752-abdb-d6954126767c"
-            },
-            "labels": [
-              "Sendet\nRAW-Daten"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -2992,15 +2992,15 @@
               "threats": []
             },
             "id": "6149b8aa-6af5-425b-8a1f-644c7d745d8e",
+            "labels": [
+              "Signierter (und verschlüsselter)\nReport wird weitergeleitet"
+            ],
             "source": {
               "cell": "41e70723-1c83-4752-abdb-d6954126767c"
             },
             "target": {
               "cell": "2731c64a-cead-475d-9b57-7e285ba7e2ca"
-            },
-            "labels": [
-              "Signierter (und verschlüsselter)\nReport wird weitergeleitet"
-            ]
+            }
           },
           {
             "position": {
@@ -3365,8 +3365,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "1c1846b0-6074-4656-abc8-782a4656e0a4",
             "zIndex": 21,
+            "id": "1c1846b0-6074-4656-abc8-782a4656e0a4",
             "data": {
               "type": "tm.Store",
               "name": "Speicher für\nprivaten Schlüssel",
@@ -3403,8 +3403,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "97068b2d-1de8-4400-a93b-7cfcafbbf764",
             "zIndex": 22,
+            "id": "97068b2d-1de8-4400-a93b-7cfcafbbf764",
             "data": {
               "type": "tm.Actor",
               "name": "Management",
@@ -3437,6 +3437,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 23,
             "id": "2731c64a-cead-475d-9b57-7e285ba7e2ca",
             "data": {
               "type": "tm.Process",
@@ -3450,8 +3451,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 23
+            }
           },
           {
             "position": {
@@ -3469,8 +3469,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "aa2794fd-ec43-439e-b585-a78fa298bc4e",
             "zIndex": 24,
+            "id": "aa2794fd-ec43-439e-b585-a78fa298bc4e",
             "data": {
               "type": "tm.Text",
               "name": "Management",
@@ -3498,6 +3498,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 25,
             "id": "f1109ed4-3c6a-49b1-a727-726f848fd6b1",
             "data": {
               "type": "tm.Process",
@@ -3511,8 +3512,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 25
+            }
           },
           {
             "position": {
@@ -3535,6 +3535,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 26,
             "id": "ab78fcdf-77c9-4491-a3b2-b811278a7c14",
             "data": {
               "type": "tm.Process",
@@ -3548,8 +3549,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 26
+            }
           },
           {
             "position": {
@@ -3575,6 +3575,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 27,
             "id": "31642506-8283-45f4-8dc9-6422d307136f",
             "data": {
               "type": "tm.Store",
@@ -3589,8 +3590,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 27
+            }
           }
         ]
       }
