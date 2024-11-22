@@ -3374,8 +3374,8 @@
                 "text": "Export\n(monatlicher\nMangement\nReport)"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3389,12 +3389,26 @@
               "description": "(1) Erstellt aus den RAW-Dateneinen monatlichen Report als Excel-Datei (2) Nutzt den privaten Schlüssel um die Excel-Datei zu signieren",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f5dfd8a1-2867-4baf-9f29-aa8025477b84",
+                  "title": "Angreifer manipuliert E-Mails",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Der Angreifer manipuliert die E-Mails bevor sie an das Management gesendet werden und ersetzt den Report durch eine schädliche PDF/Excel-Datei oder fügt der originalen Datei und schädliches Makro hinzu.\n\nCAPEC-163: Spear Phishing: An adversary targets a specific user or group with a Phishing (CAPEC-98) attack tailored to a category of users in order to have maximum relevance and deceptive capability. Spear Phishing is an enhanced version of the Phishing attack targeted to a specific user or group.\n\nATT&CK: \n\nD: 10 / R: 10 / E: 5 / A: 1 / DREA: 34",
+                  "mitigation": "Die gesendeten Reports sollten signiert werden, damit das Management die Integrität der Daten überprüfen kann.\n\nDEFEND",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 118,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3486,8 +3500,8 @@
                 "text": "SMTP-Server\n(E-Mail-Service)"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3501,12 +3515,26 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f1201700-a9ac-478f-a491-7962c7029dad",
+                  "title": "Angreifer manipuliert E-Mails",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 117,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3683,7 +3711,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 116
+    "threatTop": 118
   },
   "version": "2.2.0"
 }
