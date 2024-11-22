@@ -3423,6 +3423,19 @@
                   "new": false,
                   "number": 118,
                   "score": "20"
+                },
+                {
+                  "id": "b25d241d-b329-44a6-86ad-bc0bc16969a6",
+                  "title": "Angreifer erlangt privaten Schlüssel",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Ein (interner) Angreifer könnte den privaten Schlüssel nutzen und Signaturen fälschen. Der Angreifer gelangt an den Schlüssel durch mangelhafte Zugriffskontrollen (zB. jeder hat Zugriff auf die Datei).\n\nCAPEC-122: Privilege Abuse: An adversary is able to exploit features of the target that should be reserved for privileged users or administrators but are exposed to use by lower or non-privileged accounts.\n\nATT&CK: T1552.004: Adversaries may search for private key certificate files on compromised systems for insecurely stored credentials. \n\nD: 8 / R: 10 / E: 10 / A: 2 / DREA: 30",
+                  "mitigation": "Zugriffsschutz auf die Dateien durch rollenbasierte Berechtigungen (RBAC) einführen.\n\nDEFEND: D3-AM: Access Modeling: Access modeling identifies and records the access permissions granted to administrators, users, groups, and systems.\n\nD: 5 / R: 4 / E: 4 / A: 2 / DREA: 15",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 122,
+                  "score": "15"
                 }
               ]
             }
@@ -3756,7 +3769,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 121
+    "threatTop": 122
   },
   "version": "2.2.0"
 }
