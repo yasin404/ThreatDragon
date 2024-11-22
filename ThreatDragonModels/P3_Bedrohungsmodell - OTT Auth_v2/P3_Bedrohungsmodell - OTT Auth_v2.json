@@ -3458,12 +3458,12 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Ein (interner) Angreifer könnte den privaten Schlüssel nutzen und Signaturen fälschen. Der Angreifer gelangt an den Schlüssel durch mangelhafte Zugriffskontrollen (zB. jeder hat Zugriff auf die Datei).\n\nCAPEC-122: Privilege Abuse: An adversary is able to exploit features of the target that should be reserved for privileged users or administrators but are exposed to use by lower or non-privileged accounts.\n\nATT&CK: T1552.004: Adversaries may search for private key certificate files on compromised systems for insecurely stored credentials. \n\nD: 8 / R: 10 / E: 10 / A: 2 / DREA: 30",
+                  "mitigation": "Zugriffsschutz auf die Dateien durch rollenbasierte Berechtigungen (RBAC) einführen.\n\nDEFEND: D3-AM: Access Modeling: Access modeling identifies and records the access permissions granted to administrators, users, groups, and systems.\n\nD: 5 / R: 4 / E: 4 / A: 2 / DREA: 15",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 119,
-                  "score": ""
+                  "score": "15"
                 }
               ]
             }
