@@ -1883,11 +1883,13 @@
                 "text": "Log-DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1901,13 +1903,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "98dc2a59-6630-45f1-9321-868dd0117305",
+                  "title": "Interner Angreifer gelangt an sensible Daten",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Ein interner Angreifer kann auf die Logs zugreifen und sensible Informationen wie Telefonnummern und OTTs auslesen, da die Daten unverschlüsselt als Klartext gespeichert werden.\n\nCAPEC-177: Interception: An adversary monitors data streams to or from the target for information gathering purposes. This attack may be undertaken to solely gather sensitive information or to support a further attack against the target. This attack pattern can involve sniffing network traffic as well as other types of data streams (e.g. radio). (habe nichts passenderes gefunden)\n\nATT&CK- T1005: Data from Local System: Adversaries may search local system sources, such as file systems and configuration files or local databases, to find files of interest and sensitive data prior to Exfiltration.\n\nD: 10 / R: 10 / E: 10 / A: 10 / DREA: 40",
+                  "mitigation": "Daten in der DB verschlüsselt abspeichern.\n\nASVS: CWE 311 (6.1.1): Verify that regulated private data is stored encrypted while at rest, such as\nPersonally Identifiable Information (PII), sensitive personal information, or\ndata assessed likely to be subject to EU's GDPR.\n\nD: 0 / R: 0 / E: 4 / A: 10 / DREA: 14",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 120,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3727,7 +3743,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 119
+    "threatTop": 120
   },
   "version": "2.2.0"
 }
