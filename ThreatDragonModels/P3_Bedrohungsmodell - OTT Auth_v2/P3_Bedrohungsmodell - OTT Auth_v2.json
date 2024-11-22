@@ -3677,6 +3677,19 @@
                   "new": false,
                   "number": 112,
                   "score": "26"
+                },
+                {
+                  "id": "11ab89e2-ed12-4a98-bc0f-580e77649624",
+                  "title": "Missbrauch von Konten mit privilegierten Rechten",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Ein Angreifer könnte schlecht gesicherte Service-Konten (zB. Standardpasswörter oder fest codierte Anmeldedaten (hardcoded credentials)) ausnutzen, um auf das SIEM-System zuzugreifen und sich administrative Privilegien zu verschaffen.\n\nCAPEC-560: Use of Known Domain Credentials: An adversary guesses or obtains (i.e. steals or purchases) legitimate credentials (e.g. userID/password) to achieve authentication and to perform authorized actions under the guise of an authenticated user or service. \n\nATT&CK: T1552: Unsecured Credentials: Adversaries may search compromised systems to find and obtain insecurely stored credentials.\n\nD: 8 / R: 8 / E: 10 / A: 4 / DREA: 32",
+                  "mitigation": "Regelmäßiges rotieren von Passwörtern und Einfühung von Least Privilege für alle Service-Konten.\n\nASVS: CWE 255 (2.10.2): Verify that if passwords are required for service\nauthentication, the service account used is not a default\ncredential. (e.g. root/root or admin/admin are default in\nsome services during installation).\n\nD: 8 / R: 3 / E: 5 / A: 4 / DREA: 20",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 121,
+                  "score": "20"
                 }
               ]
             }
@@ -3743,7 +3756,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 120
+    "threatTop": 121
   },
   "version": "2.2.0"
 }
