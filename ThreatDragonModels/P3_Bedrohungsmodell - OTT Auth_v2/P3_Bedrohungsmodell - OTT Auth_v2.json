@@ -3425,11 +3425,13 @@
                 "text": "Speicher für\nprivaten Schlüssel"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3443,13 +3445,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "8d7e3669-30e4-4047-99c1-965d91414395",
+                  "title": "Angreifer erlangt privaten Schlüssel (ELEVATION OF PRIVILIGES)",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 119,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3711,7 +3727,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 118
+    "threatTop": 119
   },
   "version": "2.2.0"
 }
