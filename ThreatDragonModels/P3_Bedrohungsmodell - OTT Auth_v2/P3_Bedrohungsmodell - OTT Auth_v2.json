@@ -1924,8 +1924,8 @@
                 "text": "2-Faktor-\nAuthentifizierungs\n-dienst"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1939,7 +1939,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1948,15 +1948,15 @@
                 {
                   "id": "a53c238b-1f95-4ad9-9b8c-2590046b6618",
                   "title": "Angreifer erlangt PW und OTT",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Information disclosure",
-                  "description": "Der Angreifer erlangt die Anmeldedaten sowie den OTT des Nutzers, da die Übertragung unverschlüsselt über HTTP stattfindet. Schließlich kann sich der Angreifer anmelden und auf alle Daten des Nutzers zugreifen.\n\nCAPEC- 94: Adversary in the Middle: An adversary targets the communication between two components (typically client and server), in order to alter or obtain data from transactions.\n\nATT&CK: T1111 - Multi-Factor Authentication Interception: It is common for one-time codes to be sent via out-of-band communications (email, SMS). If the device and/or service is not secured, then it may be vulnerable to interception. \n\nD: 10 / R: 10 / E: 9 / A: 10 / DREA: 39",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Der Angreifer erlangt die Anmeldedaten sowie den OTT des Nutzers, da die Übertragung unverschlüsselt über HTTP stattfindet. Anschließend kann sich der Angreifer anmelden und auf alle Daten des Nutzers zugreifen.\n\nCAPEC- 94: Adversary in the Middle: An adversary targets the communication between two components (typically client and server), in order to alter or obtain data from transactions.\n\nATT&CK: T1111 - Multi-Factor Authentication Interception: It is common for one-time codes to be sent via out-of-band communications (email, SMS). If the device and/or service is not secured, then it may be vulnerable to interception. \n\nD: 10 / R: 10 / E: 9 / A: 10 / DREA: 39",
+                  "mitigation": "Verwendung von TLS 1.3 für den gesamten Datenverkehr. Dafür muss ein SSL/TLS-Zertifikat erworben werden und die Server müssen richtig konfiguriert werden (zB. sichere Verschlüsselungsmethode wählen).\n\nASVS: CWE 319 (9.1.1): Verify that TLS is used for all client connectivity, and does not fall back to\ninsecure or unencrypted communications.\n\nD: 2 / R: 2 / E: 3 / A: 1 / DREA: 8",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 111,
-                  "score": ""
+                  "score": "8"
                 }
               ]
             }
