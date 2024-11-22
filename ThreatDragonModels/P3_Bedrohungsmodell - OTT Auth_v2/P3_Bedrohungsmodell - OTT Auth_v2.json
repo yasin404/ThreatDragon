@@ -3644,8 +3644,8 @@
                 "text": "SIEM-System"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3659,7 +3659,7 @@
               "description": "Es empfängt Ereignisse, analysiert diese und identifiziert verdächtige Muster. (1) Überwacht fehlgeschlagene Anmeldeversuche und verdächtige Anmeldeversuche (2) Überwacht unbefugte Zugriffe und Fehlkonfigurationen",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -3668,7 +3668,7 @@
                 {
                   "id": "93d1842b-3c11-4974-89e4-e065b23b8055",
                   "title": "Angreifer gelangt an sensible Daten",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Ein Angreifer könnte sich als legitimer Benutzer im SIEM-System ausgeben, um auf sensible Daten zuzugreifen oder das System zu manipulieren (zB. die Scans ausschalten, um einen weiteren Angriff unentdeckt durchzuführen). Der Angreifer könnte Mitarbeiter mit Phishing-Angriffen täuschen und so Anmeldedaten des SIEM-Systems stehlen. \n\nCAPEC-98: Phishing: Phishing is a social engineering technique where an attacker masquerades as a legitimate entity with which the victim might do business in order to prompt the user to reveal some confidential information (very frequently authentication credentials) that can later be used by an attacker.\n\nATT&CK: 1566: Phishing: Adversaries may send phishing messages to gain access to victim systems. All forms of phishing are electronically delivered social engineering.\n\nD: 7 / R: 10 / E: 10 / A: 10 / DREA: 37",
