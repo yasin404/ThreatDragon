@@ -3362,16 +3362,16 @@
               "threats": [
                 {
                   "id": "d25732dc-e1c6-4024-8517-82338e22dbbd",
-                  "title": "New STRIDE threat",
+                  "title": "DoS - Überlastung des Services ",
                   "status": "Mitigated",
                   "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "type": "Denial of service",
+                  "description": "Angreifer könnten den OTT-Service überlasten, sodass Tokens nicht mehr versendet werden können, indem die API-Endpunkte des Services mit Anfragen überlutet werden.\n\nCAPEC-125: Flooding: An adversary consumes the resources of a target by rapidly engaging in a large number of interactions with the target.\n\nATT&CK: T1498.001: Networkt Denial of Service: Adversaries may attempt to cause a denial of service (DoS) by directly sending a high-volume of network traffic to a target.\n\nD: 5 / R: 10 / E: 10 / A: 10 / DREA: 35",
+                  "mitigation": "Pakete, die für DoS Attacken verwendet werden identifizieren und blockieren. \n\nDEFEND: D3-ISVA: Inbound Session Volume Analysis: Network appliances are configured to alert on certain packets that typically are involved in DoS attacks.\n\nD: 3 / R: 7 / E: 5 / A: 5 / DREA: 20",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 116,
-                  "score": ""
+                  "score": "20"
                 }
               ]
             }
