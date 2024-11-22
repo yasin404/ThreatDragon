@@ -3667,16 +3667,16 @@
               "threats": [
                 {
                   "id": "93d1842b-3c11-4974-89e4-e065b23b8055",
-                  "title": "Angreifer gibt sich als SIEM-System aus",
+                  "title": "Angreifer gelangt an sensible Daten",
                   "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "\n\n",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Ein Angreifer könnte sich als legitimer Benutzer im SIEM-System ausgeben, um auf sensible Daten zuzugreifen oder das System zu manipulieren (zB. die Scans ausschalten, um einen weiteren Angriff unentdeckt durchzuführen). Der Angreifer könnte Mitarbeiter mit Phishing-Angriffen täuschen und so Anmeldedaten des SIEM-Systems stehlen. \n\nCAPEC-98: Phishing: Phishing is a social engineering technique where an attacker masquerades as a legitimate entity with which the victim might do business in order to prompt the user to reveal some confidential information (very frequently authentication credentials) that can later be used by an attacker.\n\nATT&CK: 1566: Phishing: Adversaries may send phishing messages to gain access to victim systems. All forms of phishing are electronically delivered social engineering.\n\nD: 7 / R: 10 / E: 10 / A: 10 / DREA: 37",
+                  "mitigation": "Weiterbildung für alle Mitarbeiter zum Thema Phishing/Spear Phishing/Social Engineering.\n\nDEFEND: T1566: Phishing\n\nD: 3 / R: 3 / E: 10 / A: 10 / DREA: 26",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 112,
-                  "score": ""
+                  "score": "26"
                 }
               ]
             }
