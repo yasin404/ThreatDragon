@@ -1798,8 +1798,8 @@
                 "text": "Login System\nWebapp \n+ Mobile App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1813,7 +1813,7 @@
               "description": "Vergleicht eingegebenen OTT-Wert auf Telefon mit erwartetem OTT seitens 2-Faktor-Dienst.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1822,7 +1822,7 @@
                 {
                   "id": "1eb834c3-c0ca-4551-98c2-7a21353ad028",
                   "title": "DDoS",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Ein DDoS Angriff kann den Login-Dienst überlasten und somit für Anwender unerreichbar machen.\n\nCAPEC-125: Flooding: An adversary consumes the resources of a target by rapidly engaging in a large number of interactions with the target. \n\nATT&CK: TA0038 - Network Effects: An adversary consumes the resources of a target by rapidly engaging in a large number of interactions with the target. \n\n- ATT&CK: T1498 - Network Denial of Service: Adversaries may perform Network Denial of Service (DoS) attacks to degrade or block the availability of targeted resources to users.\n\nD: 8 / R: 10 / E: 8 / A: 10 / DREA: 36\n",
@@ -3207,8 +3207,8 @@
                 "text": "Kundentelefon-\nanbieter"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3222,7 +3222,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -3231,7 +3231,7 @@
                 {
                   "id": "76a83b0f-80e7-4f64-b0c8-af4b6b0f79b9",
                   "title": "Spoofing von Kundendaten",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Low",
                   "type": "Spoofing",
                   "description": "Angreifer kann sich als \"legitimer\" Kunde ausgeben, um an kritische Daten/Dienste zu gelangen zu denen er eigentlich keinen Zugriff haben dürfte (Social Engineering beim Kundendienst).\n\nCAPEC-148: Content Spoofing: An adversary modifies content to make it contain something other than what the original content producer intended while keeping the apparent source of the content unchanged.\nATT&CK: T1557: Adersary-in-the-middle\n\nD: 9 / R: 8 / E: 5 / A: 4 / DREA: 26",
@@ -3323,8 +3323,8 @@
                 "text": "Allsecure\nMobile Phone\nOTT Service"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -3338,7 +3338,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -3347,14 +3347,14 @@
                 {
                   "id": "d25732dc-e1c6-4024-8517-82338e22dbbd",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
-                  "number": 0,
+                  "new": false,
+                  "number": 116,
                   "score": ""
                 }
               ]
@@ -3604,7 +3604,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "93d1842b-3c11-4974-89e4-e065b23b8055",
+                  "title": "Angreifer gibt sich als SIEM-System aus",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "\n\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 112,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3621,11 +3635,13 @@
                 "text": "SIEM-System-DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3639,13 +3655,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "6b5bc64e-45c0-45e6-8104-01d855753417",
+                  "title": "Angreifer verischt Spuren",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Die Angreifer manipulieren die Logs, um ihre Aktivitäten zu verbergen. Angreifer könnte hierzu einen ungeschützten API-Endpunkt des SIEM-Systems ausnutzen, um SQL-Befehle auszuführen.\n\nCAPEC-268: Audit Log Manipulation: The attacker injects, manipulates, deletes, or forges malicious log entries into the log file, in an attempt to mislead an audit of the log file or cover tracks of an attack.\n\nATT&CK: T1565: Data Manipulation: Adversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data.\n\nD: 9 / R: 10 / E: 5 / A: 10 / DREA: 34",
+                  "mitigation": "Alle API-Endpunkte durchgehen und sicherstellen, dass alle Inputs validiert werden (zB. Prepared Statements oder Whitelisting)\n\nASVS: CWE 89 (5.3.4): Verify that data selection or database queries (e.g. SQL, HQL, ORM, NoSQL)\nuse parameterized queries, ORMs, entity frameworks, or are otherwise\nprotected from database injection attacks.\n\nD: 6 / R: 10 / E: 2 / A: 10 / DREA: 28",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 113,
+                  "score": "28"
+                }
+              ]
             }
           }
         ]
@@ -3653,7 +3683,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 111
+    "threatTop": 116
   },
   "version": "2.2.0"
 }
