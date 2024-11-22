@@ -1947,15 +1947,15 @@
               "threats": [
                 {
                   "id": "a53c238b-1f95-4ad9-9b8c-2590046b6618",
-                  "title": "New STRIDE threat",
+                  "title": "Angreifer erlangt PW und OTT",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
+                  "description": "Der Angreifer erlangt die Anmeldedaten sowie den OTT des Nutzers, da die Übertragung unverschlüsselt über HTTP stattfindet. Schließlich kann sich der Angreifer anmelden und auf alle Daten des Nutzers zugreifen.\n\nCAPEC- 94: Adversary in the Middle: An adversary targets the communication between two components (typically client and server), in order to alter or obtain data from transactions.\n\nATT&CK: T1111 - Multi-Factor Authentication Interception: It is common for one-time codes to be sent via out-of-band communications (email, SMS). If the device and/or service is not secured, then it may be vulnerable to interception. \n\nD: 10 / R: 10 / E: 9 / A: 10 / DREA: 39",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
-                  "number": 0,
+                  "new": false,
+                  "number": 111,
                   "score": ""
                 }
               ]
@@ -3349,7 +3349,7 @@
                   "title": "New STRIDE threat",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Spoofing",
+                  "type": "Information disclosure",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
@@ -3653,7 +3653,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 13,
-    "threatTop": 108
+    "threatTop": 111
   },
   "version": "2.2.0"
 }
